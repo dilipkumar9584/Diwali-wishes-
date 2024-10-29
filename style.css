@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Potta+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-1{
+   
+    background: linear-gradient(to right,rgb(14, 168, 168),rgb(182, 57, 191));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+}
+.zoomer{
+    position: absolute;
+    
+    top :0px;
+    right:0px
+}
+.song1,.song2{
+    display: none;
+}
+.ptag{
+    
+    position: relative;
+    top:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40%;
+    min-width: 40%;
+    /* border: 1px solid white; */
+}
+.cracker1, .cracker2,.cracker3,.cracker4{
+    display: none;
+    height: 250px;
+}
+p{  
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    font-family: sans-serif
+}
+.diwali{
+        position: absolute;
+        font-family: "Potta One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        top: 50px;
+        
+       
+        /* border: 1px solid white; */
+}
+.deepak1{
+    height: 80px;
+    position: absolute;
+    bottom:5px;
+    right: -80px;
+
+}
+.diwali2{
+    background: linear-gradient(to right, #fc72ff, #8f68ff,#487bff,#8f68ff,#fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:animate-gradient 2s linear infinite
+}
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+.btn{
+    position: absolute;
+    bottom: 60px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    transition: 0.8s;
+    background: linear-gradient(to top,rgb(223, 79, 184), rgb(8, 74, 255),rgb(0, 255, 247));
+}
+.btn:hover{
+    background: linear-gradient( to top, rgb(0, 255, 247),rgb(8, 74, 255),rgb(0, 191, 255));
+}
+.deepak2{
+    position: absolute;
+  
+
+}
+.deepak3{
+    position: absolute;
+    height: 80px;
+    left: -110px;
+    bottom:-0px
+}
+.honey{
+    position: absolute;
+    right: 0px;
+    top:200px;
+    height: 100px;
+}
+.laddu1{
+    position: absolute;
+   
+}
+
+.laddu2{
+    position: absolute;
+    
+}
+.chakra1{
+    position: absolute;
+   
+}
+
+@media only screen and (max-width:829px){
+    .box-1{
+     align-items: center;
+     border: 2px solid white;
+    }
+   .chakra1{
+    position: absolute;
+    top:-120px;
+    /* left:60px; */
+    height: 350px;
+    transform: rotateZ(90deg);
+   }
+   .diwali{
+    top:150px;
+    font-size: 26px;
+    flex-wrap: wrap;
+   }
+   .ptag{
+    top:230px
+   }
+   .deepak1{
+    height: 40px;
+    right: -40px;
+
+   }
+   .deepak3{
+    height: 40px;
+    left:-60px
+
+   }
+
+   .zoomer{
+    display: none;
+   }
+   .honey{
+    display: none;
+   }
+   .laddu1{
+    bottom:-110px;
+    height: 100px;
+    right: -20px;
+   }
+   .laddu2{
+    bottom:-110px;
+    height: 100px;
+    right: 90px;
+   }
+   .deepak2{
+    bottom:-110px;
+    height: 100px;
+    right: 250px;
+   }
+
+}
+@media only screen and (min-width:830px){
+    .box-1{
+        align-items: center;
+    }
+   .zoomer{
+    height: 300px;
+   }
+   .honey{
+    top:310px;
+    height: 200px;
+   }
+   .laddu1{
+    bottom: -150px;
+    right: -200px;
+    height: 200px;
+   }
+   .laddu2{
+    bottom: -140px;
+    right:10px ;
+    height: 150px;
+   }
+   .deepak2{
+    bottom:-150px;
+    right:240px;
+   }
+   .chakra1{
+    height: 500px;
+    left: 0px;
+    top:50px
+   }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Potta+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="media.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="box-1">
+        <audio class="song1" src="diwali_fireworks.mp3"></audio>
+        <audio class="song2"  src="happy_diwali.mp3"></audio>
+        <img class="zoomer" src="Clip path group.png" alt="">
+        <img class="honey" src="honey.png" alt="">
+
+        <img class="chakra1" src="yellow-chakra.png" alt="">
+      
+
+    <h1 class="diwali">Happy Diwali, <span class="diwali2"></span>
+    <img class="deepak1" src="Deepak.gif" alt="">
+    <img class="deepak3" src="deepak-1.png" alt="">
+    </h1>
+
+    <div class="cracker"></div>
+
+    <div class="ptag">
+
+        <img class="cracker1" src="Cracker 1.gif" alt="">
+        <img class="cracker2" src="Cracker 2.gif" alt="">
+        <img class="cracker3" src="Cracker 3.gif" alt="">
+        <img class="cracker4" src="Cracker 4.gif" alt="">
+
+        <div class="textbox">
+            <p class="msg"></p>
+            
+        <p>
+
+            May millions of lamps
+        </p>
+        <p>
+
+            illuminate your life with 
+        </p>
+        <p>
+
+            endless prosperity, Health
+        </p>
+        <p>
+            and wealth forever wishes you 
+        </p>
+        <p>
+            and your family a very happy diwali
+
+        </p>
+        </div>
+        <img class="laddu1" src="laddu-1.png" alt="">
+        <img class="laddu2" src="laddu-2.png" alt="">
+        <img class="deepak2" src="deepak-2.png" alt="">
+    </div>
+    <button class="btn">Brust a Cracker!</button>
+    </div>
+    
+</body>
+<script>
+    let diwali2=document.querySelector('.diwali2')
+    let msg=document.querySelector('.msg')
+
+    const name=new URLSearchParams(location.search).get("reciever");
+    diwali2.innerHTML=name
+    msg.innerHTML=new URLSearchParams(location.search).get('msg')
+ 
+</script>
+<script src="script.js"></script>
+</html>
